@@ -1,0 +1,5 @@
+{
+  "name": "Freelancer Fee Calculator",
+  "description": "Calculate your final earnings after fees from platforms like Mostaql and Upwork, through PayPal and Airtm, to your local currency. This tool provides a clear breakdown of each step's deductions.",
+  "requestFramePermissions": []
+}
