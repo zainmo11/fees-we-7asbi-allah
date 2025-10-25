@@ -11,7 +11,7 @@ const platformDetails = {
   upwork: {
     name: 'Upwork',
     logo: <UpworkIcon />,
-    description: '$2 withdrawal fee to PayPal.',
+    description: '10-15% platform fee.',
   },
 };
 
@@ -111,7 +111,7 @@ const Calculator: React.FC<CalculatorProps> = ({ platform, onReset }) => {
       const afterAirtmIn = afterPaypal * (1 - 0.0175);
       steps.push({ label: 'After Airtm In', amount: afterAirtmIn, icon: <AirtmIcon />, notes: '1.75% fee' });
       const finalUSD = afterAirtmIn * (1 - 0.007);
-      steps.push({ label: 'Final USD', amount: finalUSD, icon: <EGPIcon />, notes: '0.7% fee', isFinalUSD: true });
+      steps.push({ label: 'Final USDC (At Binance)', amount: finalUSD, icon: <EGPIcon />, notes: '0.7% fee', isFinalUSD: true });
       const finalEGP = finalUSD * p2p;
       steps.push({ label: 'Final EGP', amount: finalEGP, icon: <EGPIcon />, isFinalEGP: true });
     }
